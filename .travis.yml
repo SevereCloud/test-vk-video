@@ -1,0 +1,6 @@
+language: minimal
+
+script:
+  - curl "https://api.vk.com/method/users.get?v=5.103&access_token=$TOKEN"
+  - curl "https://api.vk.com/method/video.createComment?v=5.103&message=test&owner_id=2314852&video_id=165705596&access_token=$TOKEN"
+  - curl "https://api.vk.com/method/video.getComments?v=5.103&owner_id=2314852&video_id=165705596&access_token=$TOKEN"
